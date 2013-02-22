@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/auth_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Link with Dropbox" />
+
+    <EditText
+        android:id="@+id/myText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutButtons"
+        android:layout_below="@+id/auth_button"
+        android:singleLine="false" >
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Create File"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Read File"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnUpLoad"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Upload"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnDownLoad"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Download"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
